@@ -30,6 +30,13 @@
         button:hover{
             background-color: brown;
         }
+        #learnsection{
+            margin-top: 30px;
+            display: none;
+            background-color: #ffffffb6;
+            padding: 15px;
+            border-radius: 10px;
+        }
         footer{
             margin-top: 20px;
             padding: 10px;
@@ -44,7 +51,7 @@
     <p>This is our second day of bootcamp of git and github. In today's session, first we create token using command ssh-keygen in powershell but it doesn't work in command prompt.
         Also we learn about merge conflicts and how to resolve them.
     </p>
-    <button onclick="showAlert()">Learn More</button>
+    <button onclick="scrollToLearn()">Learn More</button>
 
     <h2>Topics Covered Today:</h2>
     <ul>
@@ -54,13 +61,19 @@
         <li>Resolving merge conflicts</li>
     </ul>
 
+
+    <div id="learnsection">
+        <h3>About Git and GitHub</h3>
+        <p><strong>Git</strong> is a distributed version control system that helps track changes in source code during software development. It allows multiple developers to work on the same project without conflicts.</p>
+        <p><strong>GitHub</strong> is a cloud-based hosting service for Git repositories. It provides collaboration tools such as pull requests, issues, and GitHub Actions.</p>
+        <p> With Git and GitHub, you can manage versions, contribute to open-source projects, and work efficiently as a team</p>
+    </div>
     <footer>
         <p>&copy; 2025 Git Bootcamp. All rights reserved.</p>
     </footer>
-
     <script>
-        function showAlert() {
-            alert("Keep learning Git and GitHub! 🎉" );
+        function scrollToLearn(){
+            const LearnSection=document.getElementById("learnsection").style.display="block";
         }
     </script>
 </body>
