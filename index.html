@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Hello ! everyone</h1>
+    <p>This is our second day of bootcamp of git and github. In today's session, first we create token using command ssh-keygen in powershell but it doesn't work in command prompt.
+        Also we learn about merge conflicts and how to resolve them.
+    </p>
+    <button onclick="scrollToLearn()">Learn More</button>
+
+    <h2>Topics Covered Today:</h2>
+    <ul>
+        <li>Generating SSH keys to create token</li>
+        <li>Using PowerShell vs Command Prompt</li>
+        <li>Understanding merge conflicts</li>
+        <li>Resolving merge conflicts</li>
+    </ul>
+
+
+    <div id="learnsection">
+        <h3>About Git and GitHub</h3>
+        <p><strong>Git</strong> is a distributed version control system that helps track changes in source code during software development. It allows multiple developers to work on the same project without conflicts.</p>
+        <p><strong>GitHub</strong> is a cloud-based hosting service for Git repositories. It provides collaboration tools such as pull requests, issues, and GitHub Actions.</p>
+        <p> With Git and GitHub, you can manage versions, contribute to open-source projects, and work efficiently as a team</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 Git Bootcamp. All rights reserved.</p>
+    </footer>
+    <script>
+        function scrollToLearn(){
+            const LearnSection=document.getElementById("learnsection").style.display="block";
+        }
+    </script>
+</body>
+</html>
