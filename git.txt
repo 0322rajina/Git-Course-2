@@ -1,1 +1,2 @@
 This text is about git
+and this text is going to delete
