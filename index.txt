@@ -3,3 +3,5 @@ Cherry-pick
 Revert Changes
 
 Reset Changes(hard, soft, mixed)
+
+This is a new Changes.
